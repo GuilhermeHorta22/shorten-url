@@ -1,4 +1,3 @@
-import { stat } from "node:fs";
 import "./env";
 import Fastify from "fastify";
 //passar a importaçãao do routes
