@@ -1,4 +1,4 @@
-import "./env";
+import "./env.js";
 import Fastify from "fastify";
 //passar a importaçãao do routes
 import { urlRoutes } from "./routes/urlRoutes.js";
