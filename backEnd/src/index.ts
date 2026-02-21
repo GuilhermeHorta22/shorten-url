@@ -1,10 +1,12 @@
 import "./env";
 import Fastify from "fastify";
 //passar a importaçãao do routes
+import { urlRoutes } from "./routes/urlRoutes.js";
 
 const fastify = Fastify({logger: true});
 
 //criar um registro para meu route
+fastify.register(urlRoutes, { prefix: 'shorten-url'});
 
 fastify.get('/', async(request, reply) => {
     return { hello: "world"}
