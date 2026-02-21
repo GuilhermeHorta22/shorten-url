@@ -5,3 +5,9 @@ generator client {
 datasource db {
     provider = "postgresql"
 }
+
+model Url {
+    urlShort String @id
+    urlLong String @unique
+    expiresAt DateTime
+}
