@@ -1,9 +1,13 @@
 import "./env.js";
 import Fastify from "fastify";
+import cors from "@fastify/cors";
+
 //passar a importaçãao do routes
 import { urlRoutes } from "./routes/urlRoutes.js";
 
 const fastify = Fastify({logger: true});
+
+fastify.register(cors, {origin: true});
 
 //criar um registro para meu route
 fastify.register(urlRoutes, { prefix: 'shorten-url'});
