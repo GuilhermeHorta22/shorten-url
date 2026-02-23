@@ -24,3 +24,8 @@ Este é um projeto fullstack desenvolvido para encurtar URLs longas de forma rá
 1.  **Encurtamento:** O usuário insere uma URL longa no Front-end.
 2.  **Processamento:** O Back-end gera um código único (ex: `abcd123`), valida a unicidade e salva no banco de dados com uma data de expiração.
 3.  **Redirecionamento:** Ao clicar no link curto gerado, o servidor Fastify identifica o código, busca a URL original no banco e realiza um redirecionamento automático.
+
+## Prévia do funcionamento
+
+### Tela Principal
+![Tela Principal](./imageEncurtador.png)
