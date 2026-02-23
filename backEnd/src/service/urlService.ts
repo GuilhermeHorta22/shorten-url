@@ -39,12 +39,14 @@ export class urlService
     }
 
     //criar url curta baseada em uma url longa
-    async createUrlShort(urlLong: string, expiresAt: Date): Promise<Url>
+    async createUrlShort(urlLong: string, expiresAt: Date): Promise<String>
     {
         do
         {
             var urlShort = await this.sortUrl(await this.sortLength(5, 10));
         }while(await this.existsUrl(urlShort));
+
+        const domain = "http://encurtador.com/" + urlShort;
 
         const url = await prisma.url.create({
             data: {
@@ -54,7 +56,7 @@ export class urlService
             }
         });
 
-        return url;
+        return domain;
     }
 
     //fazer o redirecionamento para a url longa

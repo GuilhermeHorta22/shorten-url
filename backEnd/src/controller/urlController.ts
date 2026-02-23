@@ -16,7 +16,7 @@ export class urlController
         const newUrl = await this.service.createUrlShort(url, date);
 
         const newBody = {
-            urlShort: newUrl.urlShort
+            urlShort: newUrl
         }
 
         return reply.code(201).send(newBody);
