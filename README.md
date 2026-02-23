@@ -12,6 +12,7 @@ Este é um projeto fullstack desenvolvido para encurtar URLs longas de forma rá
 * **Prisma ORM**: Gerenciamento de banco de dados e consultas.
 * **TypeScript**: Tipagem estática para maior segurança no código.
 * **CORS**: Configurado para permitir a comunicação segura com o Front-end.
+* **Docker:** Utilizado para containerizar o banco de dados, garantindo um ambiente de desenvolvimento isolado e replicável.
 
 ### **Front-end**
 * **React**: Biblioteca para construção da interface.
